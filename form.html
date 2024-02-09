@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=F<form>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*form{
+            display: flex;
+            flex-direction: column;
+            align-items:left;
+
+        }
+
+        input {
+            margin-bottom: 10px;
+
+
+        }*/
+    </style>
+    <script>
+
+        function  submitData(){
+
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+        const payload = {
+            name: name,
+            emailAddress: email
+        }
+        //alert(payload);
+        alert(JSON,stringify(payload))
+        const host = 'http://myserver.com';
+        const path = "/api/v1/user";
+        let m  = {"message":"Username or password is incorrect"}
+
+        }
+    </script>
+</head>
+<body>
+    <form> 
+        <label for="name">Name</label>
+        <input type="text"id="name" value=""placeHolder="please enter your name"><br><br><br>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="please enter your name"><br><br><br><br>
+<div id="message">
+
+</div>
+        <button type="submit" onClick="submitData">Submit</button>
+
+        <!--
+            name:'gowri'
+            email:'gowri.com'
+        -->
+    </form>
+</body>
+</html>
